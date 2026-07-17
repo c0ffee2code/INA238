@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.idea/
+.DS_Store
+
+# Claude Code user-local settings
+.claude/settings.local.json
+
+# MicroPython compiled bytecode
+*.mpy
