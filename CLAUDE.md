@@ -9,7 +9,16 @@ Driver for the Adafruit INA238 breakout, a 16-bit precision power monitor
 src/ina238.py        — the driver
 tools/read_power.py  — host script: sample power draw, print table + min/avg/max
 references/          — INA237 datasheet (SBOSA20A, Rev A, May 2022) — see note below
+README.md            — public-facing docs: wiring, API reference, gotchas
+CLAUDE.md            — this file: rig specifics, diagnosis history, design rationale
+LICENSE              — GPL-3.0
 ```
+
+`README.md` and this file have different audiences and both need updating when
+the driver's surface changes. README covers the API and the two hardware gotchas
+(common ground for VBUS, conversion-cycle pacing); CLAUDE.md carries the
+rig-specific detail, datasheet citations and the debugging history that a public
+readme shouldn't.
 
 ## Datasheet note — INA237 vs INA238
 
